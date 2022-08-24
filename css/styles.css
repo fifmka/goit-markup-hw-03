@@ -19,7 +19,7 @@ body{
 .link {
     text-decoration: none;
 }
-.list{
+.list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -30,9 +30,9 @@ body{
     padding-right: 15px;
     margin: 0 auto;
 }
-
 /* Логотип header*/
 .header-logo{
+    margin-right: 93px;
     color: var(--logo-color);
 }
 .accent-logo{
@@ -45,8 +45,25 @@ body{
     line-height: 1.2;
 }
 
-/* Навігація */
+/* Меню, Навігація*/
+.header .main-nav{
+    display: flex;  
+}
+.main-nav .nav{
+    display: flex;
+    align-items: center;
+}
+.main-nav .list-nav{
+    display: flex;
+}
+.list-nav .item:not(:last-child){
+    margin-right: 50px;
+}
 .list-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -59,8 +76,19 @@ body{
 .list-nav .link:hover, .list-nav .link:focus{
     color: var(--accent-color);
 }
-/* Контакти */
+/* Меню,Контакти */
+.contacts.list{
+    display: flex;
+    margin-left: auto;
+}
+.contacts .item:not(:last-child){
+    margin-right: 50px;
+}
 .contacts .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--paragraph-color);
     font-weight: 500;
     font-size: 14px;
@@ -129,6 +157,13 @@ body{
     line-height: 1.71;
 }
 /* Особливості */
+.specialty .list{
+    display: flex;
+    justify-content: center;
+}
+.specialty .item:not(:last-child){
+    margin-right: 30px;
+}
 .section-title.specialty{
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -139,7 +174,14 @@ body{
 }
 
 /* Роботи */
-.works.section{
+.works .list{
+    display: flex;
+    justify-content: center;
+}
+.works .item:not(:last-child){
+    margin-right: 30px;
+}
+.section.works{
     padding-bottom: 94px;
 }
 .works .section-title{
@@ -150,11 +192,23 @@ body{
     line-height: 1.17;
     text-align: center;
 }
+.works .photo{
+    display: block;
+}
+
 /* Команда */
+.team .list{
+    display: flex;
+    justify-content: center;
+}
+.team .item:not(:last-child){
+    margin-right: 30px;
+}
+
 .team.section{
     background-color: var(--additional-background-color);
     padding-top: 94px;
-    padding-bottom: 84px;
+    padding-bottom: 94px;
 }
 .team .section-title{
     margin-bottom: 50px;
@@ -165,6 +219,7 @@ body{
     text-align: center;
 }
 .team .photo{
+    display: block;
     margin-bottom: 30px;
 }
 .team .section-title.member{
@@ -173,12 +228,13 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: left;
+    text-align: center;
 }
 .team .section-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 /* Підвал */
 .footer{
@@ -228,7 +284,9 @@ body{
     list-style: none;
     margin-bottom: 34px;
 }
-
+.list-portfolio .photo{
+    display: block;
+}
 .list-portfolio .button{
     background-color: var(--additional-background-color);
     color: var(--primary-text-color);
